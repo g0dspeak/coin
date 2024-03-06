@@ -49,7 +49,7 @@ else ()
 endif ()
 
 # Group the files together in IDEs
-source_group("" FILES $${Common} ${Config} ${Crypto} ${CryptoNoteCore} ${CryptoNoteProtocol} ${TurtleCoind} ${Http} ${Logging} ${Logger} ${miner} ${Mnemonics} ${Nigel} ${P2p} ${Rpc} ${Serialization} ${System} ${Wallet} ${WalletApi} ${WalletBackend} ${zedwallet++} ${CryptoTest} ${Errors} ${Utilities} ${WalletUpgrader} ${SubWallets})
+source_group("" FILES $${Common} ${Config} ${Crypto} ${CryptoNoteCore} ${CryptoNoteProtocol} ${Cryptocrated} ${Http} ${Logging} ${Logger} ${miner} ${Mnemonics} ${Nigel} ${P2p} ${Rpc} ${Serialization} ${System} ${Wallet} ${WalletApi} ${WalletBackend} ${zedwallet++} ${CryptoTest} ${Errors} ${Utilities} ${WalletUpgrader} ${SubWallets})
 
 # Define a group of files as a library to link against
 add_library(Common STATIC ${Common})
@@ -90,7 +90,7 @@ endif ()
 
 add_executable(cryptotest ${CryptoTest} ${CT_SOURCES_OS})
 add_executable(miner ${miner} ${MINER_SOURCES_OS})
-add_executable(Cryptocrated ${TurtleCoind} ${DAEMON_SOURCES_OS})
+add_executable(Cryptocrated ${Cryptocrated} ${DAEMON_SOURCES_OS})
 add_executable(WalletApi ${WalletApi} ${WALLET_API_SOURCES_OS})
 add_executable(zedwallet++ ${zedwallet++} ${ZED_WALLET_SOURCES_OS})
 
