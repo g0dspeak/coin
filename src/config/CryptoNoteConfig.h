@@ -285,7 +285,7 @@ namespace CryptoNote
         };
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 1;
+        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 0;
 
         const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -406,7 +406,7 @@ namespace CryptoNote
     const char *const SEED_NODES[] = {
         "164.90.145.23:10868", //1
         "137.184.90.139:10868", //2 
-        "137.184.95.115:10868" //3
+        "137.184.95.115:10868", //3
         "143.110.159.243:10868" // 4
     };
 } // namespace CryptoNote
