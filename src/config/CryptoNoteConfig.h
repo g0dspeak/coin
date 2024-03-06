@@ -257,13 +257,13 @@ namespace CryptoNote
 
         /* Block heights we are going to have hard forks at */
         const uint64_t FORK_HEIGHTS[] = {
-         //   187000, // 0
-            350000, // 1
-            440000, // 2
-            620000, // 3
-            700000, // 4
-            800000, // 5
-            1000000, // 6
+            187000, // 0
+            //350000, // 1
+           // 440000, // 2
+           // 620000, // 3
+           // 700000, // 4
+           // 800000, // 5
+           // 1000000, // 6
            // 1200000, // 7
           //  1300000, // 8
          //   2000000, // 12
@@ -360,9 +360,9 @@ namespace CryptoNote
 
     // P2P Network Configuration Section - This defines our current P2P network version
     // and the minimum version for communication between nodes
-    const uint8_t P2P_CURRENT_VERSION = 12;
+    const uint8_t P2P_CURRENT_VERSION = 1;
 
-    const uint8_t P2P_MINIMUM_VERSION = 11;
+    const uint8_t P2P_MINIMUM_VERSION = 1;
 
     // This defines the minimum P2P version required for lite blocks propogation
     const uint8_t P2P_LITE_BLOCKS_PROPOGATION_VERSION = 4;
@@ -407,5 +407,6 @@ namespace CryptoNote
         "164.90.145.23:10868", //1
         "137.184.90.139:10868", //2 
         "137.184.95.115:10868" //3
+        "143.110.159.243:10868" // 4
     };
 } // namespace CryptoNote
