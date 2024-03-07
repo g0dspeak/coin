@@ -10,7 +10,7 @@
 namespace WalletConfig
 {
     /* The prefix your coins address starts with */
-    const std::string_view addressPrefix = "XC";
+    const std::string_view addressPrefix = xcpt;
 
     /* Your coins 'Ticker', e.g. Monero = XMR, Bitcoin = BTC */
     const std::string ticker = "XCRT";
@@ -23,7 +23,7 @@ namespace WalletConfig
     const std::string addressBookFilename = ".addressBook.json";
 
     /* The name of your deamon */
-    const std::string daemonName = "Crated";
+    const std::string daemonName = "crated";
 
     /* The name to call this wallet */
     const std::string walletName = "zedwallet";

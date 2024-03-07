@@ -71,7 +71,7 @@ namespace CryptoNote
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1512800692;
+        const uint64_t GENESIS_BLOCK_TIMESTAMP = 0;
 
         const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
 
@@ -203,7 +203,7 @@ namespace CryptoNote
         /* Coinbase transactions must include the recipient address + tx priv
          * key in tx_extra to verify the outputs go to that address after this
          * height. */
-        const uint64_t COINBASE_TRANSACTION_OUTPUT_CLAIMING_HEIGHT = 2'800'000;
+        const uint64_t COINBASE_TRANSACTION_OUTPUT_CLAIMING_HEIGHT = 1'800'000;
 
         /* This describes how many blocks of "wiggle" room transactions have regarding
            when the outputs can be spent based on a reasonable belief that the outputs
@@ -352,7 +352,7 @@ namespace CryptoNote
 
     const int RPC_DEFAULT_PORT = 10869;
 
-    const int SERVICE_DEFAULT_PORT = 18070;
+    const int SERVICE_DEFAULT_PORT = 10770;
 
     const size_t P2P_LOCAL_WHITE_PEERLIST_LIMIT = 1000;
 
@@ -365,7 +365,7 @@ namespace CryptoNote
     const uint8_t P2P_MINIMUM_VERSION = 1;
 
     // This defines the minimum P2P version required for lite blocks propogation
-    const uint8_t P2P_LITE_BLOCKS_PROPOGATION_VERSION = 4;
+    const uint8_t P2P_LITE_BLOCKS_PROPOGATION_VERSION = 1;
 
     // This defines the number of versions ahead we must see peers before we start displaying
     // warning messages that we need to upgrade our software.
