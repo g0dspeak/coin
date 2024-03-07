@@ -10,10 +10,10 @@
 namespace WalletConfig
 {
     /* The prefix your coins address starts with */
-    const std::string_view addressPrefix = "0x784b4";
+    const std::string_view addressPrefix = "XCRT";
 
     /* Your coins 'Ticker', e.g. Monero = XMR, Bitcoin = BTC */
-    const std::string ticker = "XCRT";
+    const std::string ticker = "XCR";
 
     /* The filename to output the CSV to in save_csv */
     const std::string csvFilename = "transactions.csv";
