@@ -232,8 +232,9 @@ namespace CryptoNote
         static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 
         /* Block heights we are going to have hard forks at */
-        const uint64_t FORK_HEIGHTS[] = { 
-           0,
+        const uint64_t FORK_HEIGHTS[] = 
+        { 
+           1200,
             };
         
 
